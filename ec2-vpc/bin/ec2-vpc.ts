@@ -4,6 +4,5 @@ import * as cdk from '@aws-cdk/core';
 import { Ec2VpcStack } from '../lib/ec2-vpc-stack';
 
 const app = new cdk.App();
-const envCA = { region: "ca-central-1" };
 new Ec2VpcStack(app, 'Ec2VpcStack',
-		{env:envCA});
+		{env: {region: app.node.tryGetContext("region")}});
