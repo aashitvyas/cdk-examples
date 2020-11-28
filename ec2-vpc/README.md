@@ -14,5 +14,5 @@ The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
 ## Description
 
-1. This project is going to deploy a VPC with default cidr range 10.0.0.0/16 and its default subnet mask /18 to maximum of 3 AZs in a targeted region
+1. This project is going to deploy a VPC with default cidr range 10.0.0.0/16 with Public and Private subnet evenly divided to maximum of 3 AZs in a targeted region
 2. It will going to output **vpcid** and **subnetids** of both public & private subnet
